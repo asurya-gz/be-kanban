@@ -2,9 +2,6 @@ const express = require("express");
 const router = express.Router();
 const cardRoutes = require("../../controllers/Cards/cardController");
 
-// Create a new card
-router.post("/create-card", cardRoutes.createCard);
-
 // Get cards by column ID
 router.get("/column/:columnId/cards", cardRoutes.getColumnCards);
 
